@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 부트캠프 🚀 | 의성에서 한 달 살며 배우는 IT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-emoji">⚡</span>
+                <span class="logo-text">AI Bootcamp</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" data-nav>홈</a></li>
+                <li><a href="#about" data-nav>소개</a></li>
+                <li><a href="#curriculum" data-nav>커리큘럼</a></li>
+                <li><a href="#contact" data-nav>문의</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <span class="icon">🌙</span>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">의성에서 한 달,</span>
+                <span class="title-line gradient-text">AI로 IT 서비스 런칭</span>
+            </h1>
+            <p class="hero-subtitle">
+                전국 청년 개발자 24명과 함께하는 지역 한 달 살이 프로그램<br>
+                AI 바이브코딩으로 실제 서비스를 만들어보세요 🔥
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('curriculum')">
+                    커리큘럼 보기
+                    <span class="btn-arrow">→</span>
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('about')">
+                    더 알아보기
+                </button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-number">24</div>
+                    <div class="stat-label">참가자</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">30</div>
+                    <div class="stat-label">Days</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">9</div>
+                    <div class="stat-label">Modules</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">ABOUT</span>
+                <h2 class="section-title">AI 시대, 개발의 새로운 패러다임</h2>
+                <p class="section-subtitle">코딩 몰라도 OK! AI와 함께라면 누구나 개발자 🎯</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI 코딩 어시스턴트</h3>
+                    <p>Claude Code, GitHub Copilot으로 코드 자동 생성</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">💰</div>
+                    <h3>수익화 콘텐츠</h3>
+                    <p>AI로 돈되는 콘텐츠 제작 노하우 전수</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">🚀</div>
+                    <h3>실전 프로젝트</h3>
+                    <p>구글 스프린트 기법으로 실제 서비스 런칭</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">🌏</div>
+                    <h3>지역 한 달 살이</h3>
+                    <p>의성에서 함께 생활하며 몰입형 학습</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="curriculum" class="curriculum">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">CURRICULUM</span>
+                <h2 class="section-title">9개 모듈로 완성하는 IT 서비스</h2>
+                <p class="section-subtitle">기초부터 배포까지, 한 달 만에 마스터 🎓</p>
+            </div>
+            <div class="curriculum-grid">
+                <div class="curriculum-card">
+                    <div class="card-number">01</div>
+                    <div class="card-content">
+                        <h3>AI 프로그래밍 개론</h3>
+                        <p>AI 시대의 개막과 AI 모델 활용법</p>
+                        <div class="card-tags">
+                            <span class="tag">기초</span>
+                            <span class="tag">AI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="curriculum-card">
+                    <div class="card-number">02</div>
+                    <div class="card-content">
+                        <h3>AI 콘텐츠 수익화</h3>
+                        <p>AI로 고품질 콘텐츠 생성 및 수익화</p>
+                        <div class="card-tags">
+                            <span class="tag">비즈니스</span>
+                            <span class="tag">수익화</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="curriculum-card">
+                    <div class="card-number">03</div>
+                    <div class="card-content">
+                        <h3>구글 스프린트</h3>
+                        <p>사용자 중심 문제 정의와 빠른 프로토타이핑</p>
+                        <div class="card-tags">
+                            <span class="tag">기획</span>
+                            <span class="tag">UX</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="curriculum-card">
+                    <div class="card-number">04</div>
+                    <div class="card-content">
+                        <h3>AI 코딩 어시스턴트</h3>
+                        <p>Claude Code, GitHub Copilot 활용법</p>
+                        <div class="card-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">개발</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="curriculum-card">
+                    <div class="card-number">05</div>
+                    <div class="card-content">
+                        <h3>웹 프로그래밍 기초</h3>
+                        <p>HTML/CSS/JS와 React/Vue 프레임워크</p>
+                        <div class="card-tags">
+                            <span class="tag">웹</span>
+                            <span class="tag">프론트엔드</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="curriculum-card">
+                    <div class="card-number">06</div>
+                    <div class="card-content">
+                        <h3>API 사용하기</h3>
+                        <p>REST API, OpenAI API 연동</p>
+                        <div class="card-tags">
+                            <span class="tag">백엔드</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="curriculum-card">
+                    <div class="card-number">07</div>
+                    <div class="card-content">
+                        <h3>배포하기</h3>
+                        <p>클라우드 플랫폼 활용과 도메인 설정</p>
+                        <div class="card-tags">
+                            <span class="tag">배포</span>
+                            <span class="tag">클라우드</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="curriculum-card">
+                    <div class="card-number">08</div>
+                    <div class="card-content">
+                        <h3>자동화 시스템</h3>
+                        <p>CI/CD와 GitHub Actions 워크플로우</p>
+                        <div class="card-tags">
+                            <span class="tag">자동화</span>
+                            <span class="tag">DevOps</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="curriculum-card">
+                    <div class="card-number">09</div>
+                    <div class="card-content">
+                        <h3>온라인 마케팅/CS</h3>
+                        <p>SEO 최적화와 데이터 기반 마케팅</p>
+                        <div class="card-tags">
+                            <span class="tag">마케팅</span>
+                            <span class="tag">SEO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="contact-title">함께 성장할 준비 되셨나요?</h2>
+                <p class="contact-subtitle">AI와 함께하는 새로운 개발 여정을 시작하세요 ✨</p>
+                <div class="contact-buttons">
+                    <button class="btn btn-primary btn-large">
+                        지원하기
+                        <span class="btn-arrow">→</span>
+                    </button>
+                    <button class="btn btn-secondary btn-large">
+                        문의하기
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-emoji">⚡</span>
+                    <span class="logo-text">AI Bootcamp</span>
+                </div>
+                <div class="footer-info">
+                    <p>의성에서 1달 살며 배우는 AI 부트캠프</p>
+                    <p>© 2024 AI Bootcamp. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
